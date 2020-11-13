@@ -1,0 +1,295 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+/* Navbar */
+
+.fas {
+  color: red;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  width: 280px;
+  margin-left: 100px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-right {
+  width: 400px;
+  margin-top: 30px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 950px) {
+  .nav-right {
+    margin-right: 10px;
+  }
+
+  .navbar {
+    width: 850px;
+  }
+}
+
+.logo h5 {
+  margin-top: -15px;
+}
+
+#color {
+  border: none;
+  background-color: initial;
+  width: 20px;
+  margin-top: -4px;
+}
+.nav-toggle {
+  border: none;
+  background-color: initial;
+}
+
+.nav-toggle:focus {
+  outline: none;
+}
+.nav-toggle:hover {
+  cursor: pointer;
+}
+.nav-toggle-list {
+  margin-left: 60px;
+  margin-top: 50px;
+}
+.nav-toggle-list ul {
+  display: flex;
+  width: 400px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-toggle-list li {
+  list-style: none;
+  font-size: 20px;
+}
+
+/* after nav-toggle click */
+.show {
+  display: none;
+}
+
+.body-background {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-background {
+  background-color: white;
+  height: 200px;
+}
+
+/* tools */
+.tools {
+  margin-left: 70px;
+}
+.tools-show {
+  display: none;
+}
+.tools ul {
+  display: flex;
+  width: 700px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tools li {
+  list-style: none;
+}
+
+/* Spell Checker */
+
+.spell-check {
+  margin-left: 100px;
+  margin-top: 70px;
+}
+
+#number {
+  width: 30px;
+  border: none;
+}
+
+#text {
+  margin-left: 100px;
+  margin-top: 20px;
+  width: 86%;
+  height: 400px;
+}
+
+#button {
+  width: 70px;
+  background-color: red;
+  color: white;
+}
+
+.mobile-tools {
+  display: none;
+}
+
+.menu-mobie {
+  display: none;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+/* 768 */
+@media (max-width: 768px) {
+  #color,
+  #color-label {
+    display: none;
+  }
+  .navbar {
+    margin-left: -60px;
+    width: 768px;
+  }
+
+  .nav-left {
+    width: 280px;
+  }
+  .nav-right {
+    width: 350px;
+  }
+
+  .tools {
+    margin-left: 10px;
+  }
+  .tools ul {
+    width: 560px;
+  }
+  #hide {
+    display: none;
+  }
+
+  .check-section {
+    margin-left: -50px;
+  }
+}
+
+/* Menu 320 */
+
+@media (max-width: 320px) {
+  .navbar {
+    display: none;
+  }
+  .navbar-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-left {
+    margin-left: 20px;
+    width: 270px;
+  }
+
+  .nav-toggle-mobile {
+    border: none;
+    background-color: initial;
+  }
+
+  .nav-toggle-mobile:focus {
+    outline: none;
+  }
+  .nav-toggle-mobile:hover {
+    cursor: pointer;
+  }
+
+  .tools {
+    display: none;
+  }
+
+  .mobile-tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90px;
+    margin-left: 30px;
+  }
+  .mobile-tools select {
+    width: 270px;
+    height: 40px;
+  }
+  .mobile-tools select {
+    color: red;
+  }
+
+  .spell-check {
+    margin-left: 80px;
+    margin-top: 30px;
+  }
+  .spell-check h1 {
+    font-size: 20px;
+  }
+
+  #text {
+    margin-left: 80px;
+    width: 260px;
+    height: 200px;
+  }
+
+  /* aftet nav-toggle click */
+
+  .menu-mobile-show {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+  }
+
+  .lang-mail {
+    display: flex;
+    width: 230px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+
+  .nav-list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    height: 150px;
+    margin-top: 50px;
+  }
+
+  .nav-list li {
+    font-size: 20px;
+  }
+
+  .logout-color {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 60px;
+  }
+
+  #colorr {
+    background-color: initial;
+    border: none;
+    width: 20px;
+  }
+
+  .color {
+    margin-top: 12px;
+  }
+}
